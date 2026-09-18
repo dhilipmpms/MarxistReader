@@ -1,0 +1,14 @@
+Marxist Reader is an offline-first Android application designed for reading Marxist and leftist content, articles, and e-books with primary support for Tamil and secondary support for English content.
+
+<b>Key Features:</b>
+• <b>Feed:</b> Browse latest articles and publications.
+• <b>Article Reader:</b> Clean reading interface with categories, tags, read-time estimates, and Tamil font support.
+• <b>EPUB Reader:</b> Built-in e-book reader with custom typography, sepia/dark themes, and Text-to-Speech (TTS) support.
+• <b>Offline Support:</b> All content is cached locally using Room database; read saved articles anytime without network connectivity.
+• <b>Background Sync:</b> Automatic background synchronization powered by WorkManager.
+• <b>Bookmarks & Saved Content:</b> Save articles and books for offline access.
+• <b>Multilingual UI:</b> Toggle seamlessly between Tamil and English interfaces.
+
+<b>Privacy & Open Source:</b>
+• 100% Free and Open Source software under GPL-3.0.
+• No tracking, ads, or analytics data collection.

@@ -1,0 +1,4 @@
+• Modernized Kotlin 2.x & Jetpack Compose UI architecture
+• Built-in EPUB e-book reader with TTS support
+• Background article synchronization & offline-first storage
+• Expanded Tamil & English localization support
