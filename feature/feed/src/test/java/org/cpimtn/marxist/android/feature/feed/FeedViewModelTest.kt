@@ -37,11 +37,11 @@ class FeedViewModelTest {
     private val syncPostsUseCase: SyncPostsUseCase = mockk()
 
     private fun createViewModel(): FeedViewModel = FeedViewModel(
-        getFeedItemsFlowUseCase,
-        getSavedPostIdsFlowUseCase,
-        savePostUseCase,
-        unsavePostUseCase,
-        syncPostsUseCase,
+        getSavedPostIdsFlowUseCase = getSavedPostIdsFlowUseCase,
+        getFeedItemsFlowUseCase = getFeedItemsFlowUseCase,
+        savePostUseCase = savePostUseCase,
+        unsavePostUseCase = unsavePostUseCase,
+        syncPostsUseCase = syncPostsUseCase,
     )
 
     @Test
@@ -61,7 +61,7 @@ class FeedViewModelTest {
     @Test
     fun initial_collection_emits_posts_then_state_is_success() = runTest {
         Dispatchers.setMain(StandardTestDispatcher(testScheduler))
-        val post = Post(1, "2024-01-01", "s", "Title", "Excerpt", emptyList(), emptyList())
+        val post = Post(1, "2024-01-01", "s", "Title", "Content", "Excerpt", emptyList(), emptyList())
         val feedItems = listOf(FeedItem(post, "", emptyList()))
         every { getFeedItemsFlowUseCase() } returns flowOf(feedItems)
         every { getSyncStatusUseCase() } returns flowOf(SyncStatus())
@@ -97,7 +97,7 @@ class FeedViewModelTest {
     @Test
     fun refresh_on_success_does_not_set_error_state() = runTest {
         Dispatchers.setMain(StandardTestDispatcher(testScheduler))
-        val post = Post(1, "2024-01-01", "s", "Title", "Excerpt", emptyList(), emptyList())
+        val post = Post(1, "2024-01-01", "s", "Title", "Content", "Excerpt", emptyList(), emptyList())
         val feedItems = listOf(FeedItem(post, "", emptyList()))
         every { getFeedItemsFlowUseCase() } returns flowOf(feedItems)
         every { getSyncStatusUseCase() } returns flowOf(SyncStatus())
