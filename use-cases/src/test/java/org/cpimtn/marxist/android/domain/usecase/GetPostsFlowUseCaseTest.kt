@@ -22,7 +22,7 @@ class GetPostsFlowUseCaseTest {
     @Test
     fun invoke_returns_flow_from_repository() = runTest {
         val posts = listOf(
-            Post(1, "2024-01-01", "slug", "Title", "Excerpt", emptyList(), emptyList())
+            Post(1, "2024-01-01", "slug", "Title", "Content", "Excerpt", emptyList(), emptyList())
         )
         every { postRepository.getPosts() } returns flowOf(posts)
 

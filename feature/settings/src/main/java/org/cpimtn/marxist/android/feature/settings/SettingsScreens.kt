@@ -59,7 +59,7 @@ import org.cpimtn.marxist.core.config.AppConfig
 import org.cpimtn.marxist.android.ui.theme.MarxistExtendedColors
 import org.cpimtn.marxist.android.ui.theme.MarxistReaderTheme
 
-private const val SOURCE_CODE_URL = "https://github.com/khaleeljageer/MarxistReader/"
+private const val SOURCE_CODE_URL = "https://github.com/dhilipmpms/MarxistReader"
 private const val PRIVACY_POLICY_URL = AppConfig.Site.PRIVACY_POLICY_URL
 private const val TERMS_CONDITIONS_URL = AppConfig.Site.TERMS_CONDITIONS_URL
 
