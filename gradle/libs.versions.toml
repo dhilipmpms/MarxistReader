@@ -1,8 +1,8 @@
 [versions]
 kotlinxCoroutinesCore = "1.11.0"
-appVersion = "6.0.2"
+appVersion = "6.0.3"
 minSdk = "26"
-versionCode = "5"
+versionCode = "6"
 compileSdk = "37"
 agp = "9.3.0"
 kotlin = "2.4.0"
