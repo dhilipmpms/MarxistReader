@@ -34,3 +34,4 @@ local.properties
 /ui-common/build
 GEMINI.md
 CLAUDE.md
+keystore.properties
